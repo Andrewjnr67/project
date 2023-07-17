@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+
+<div class="container">
+
+    <form method="post" enctype="multipart/form-data">
+       
+        {% csrf_token %}
+
+        <hr><br>
+        
+    
+        <input type="file"  name="images"  required multiple/>
+        <button type="submit" class="btn btn-secondary">submit</button>
+</form><br>
+
+</div>
+
+
+
+
+
+{% endblock %}
